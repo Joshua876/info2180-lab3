@@ -25,5 +25,11 @@ window.onload = function () {
                 }
             }
         });
+        board.children.item(i).addEventListener("mouseover",function(){
+            this.classList.add("hover");
+        });
+        board.children.item(i).addEventListener("mouseout",function(){
+            this.classList.remove("hover");
+        });
     }
 }
